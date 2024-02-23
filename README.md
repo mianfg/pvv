@@ -18,7 +18,11 @@ There are two ways to use the `validate` decorator from `pvv`:
 
 Just use the decorator. A `TypeError` will be raised if the function is called with parameters of incorrect type.
 
-> NOTE: `pvv` will check if the given parameters to a function are instances of the class annotated as a parameter. If one parameter has no type hints, it will be ignored in the validation.
+> [!NOTE]
+> `pvv` will check if the given parameters to a function are instances of the class annotated as a parameter. If one parameter has no type hints, it will be ignored in the validation.
+
+> [!WARNING]
+> `pvv` will only work with type hints that can be used with class and instance checks.
 
 ```python
 from pvv import validate
